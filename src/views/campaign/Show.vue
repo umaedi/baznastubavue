@@ -87,7 +87,7 @@
               <button
                 class="bg-yellow-500 py-3 rounded-md text-xl w-full uppercase font-bold focus:outline-none focus:bg-yellow-600"
               >
-                Donasi Sekarang!
+                Lanjutkan
               </button>
             </router-link>
           </div>

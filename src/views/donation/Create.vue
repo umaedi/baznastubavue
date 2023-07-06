@@ -2,7 +2,7 @@
   <div class="pb-20 pt-20">
     <div class="container mx-auto grid grid-cols-1 p-3 sm:w-full md:w-5/12">
       <div class="bg-white rounded-md shadow-md p-5">
-        <div class="text-xl">MASUKKAN NOMINAL DONASI</div>
+        <div class="text-xl">MASUKKAN NOMINAL ZAKAT/DONASI</div>
         <div class="border-2 border-gray-200 mt-3 mb-2"></div>
 
         <div class="mb-2">
