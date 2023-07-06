@@ -91,6 +91,11 @@ const routes = [
         name: 'search',
         component: () => import( /* webpackChunkName: "search" */ '@/views/search/Index.vue')
     },
+    {
+        path: '/show/qris',
+        name: 'qris',
+        component: () => import( /* webpackChunkName: "search" */ '@/views/donation/Qris.vue')
+    },
 ]
 
 //create router
@@ -104,12 +109,12 @@ router.beforeEach((to, from, next) => {
     if (to.matched.some(record => record.meta.requiresAuth)) {
         //cek nilai dari getters isLoggedIn di module auth
         if (store.getters['auth/isLoggedIn']) {
-        next()
-        return
-      }
-      next('/login')
+            next()
+            return
+        }
+        next('/login')
     } else {
-      next()
+        next()
     }
 })
 
