@@ -45,7 +45,7 @@
                       </p>
                     </figcaption>
                     <div v-if="donation.status == 'pending'">
-                      <div v-if="donation.campaign.category_id == 4">
+                      <div v-if="donation.campaign.category_id == 2">
                         <router-link :to="{ name: 'qris.zakat' }">
                           <button
                             class="bg-green-500 border-2 border-green-500 rounded shadow-sm text-xs py-1 px-2 text-black focus:outline-none"
