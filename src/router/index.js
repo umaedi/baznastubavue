@@ -92,9 +92,14 @@ const routes = [
         component: () => import( /* webpackChunkName: "search" */ '@/views/search/Index.vue')
     },
     {
-        path: '/show/qris',
-        name: 'qris',
-        component: () => import( /* webpackChunkName: "search" */ '@/views/donation/Qris.vue')
+        path: '/show/qris/zakat',
+        name: 'qris.zakat',
+        component: () => import( /* webpackChunkName: "search" */ '@/views/donation/Qriszakat.vue')
+    },
+    {
+        path: '/show/qris/infaq',
+        name: 'qris.infaq',
+        component: () => import( /* webpackChunkName: "search" */ '@/views/donation/Qrisinfaq.vue')
     },
 ]
 

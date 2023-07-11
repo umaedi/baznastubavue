@@ -45,13 +45,24 @@
                       </p>
                     </figcaption>
                     <div v-if="donation.status == 'pending'">
-                      <router-link :to="{ name: 'qris' }">
-                        <button
-                          class="bg-green-500 border-2 border-green-500 rounded shadow-sm text-xs py-1 px-2 text-black focus:outline-none"
-                        >
-                          BAYAR SEKARANG
-                        </button>
-                      </router-link>
+                      <div v-if="donation.campaign.category_id == 4">
+                        <router-link :to="{ name: 'qris.zakat' }">
+                          <button
+                            class="bg-green-500 border-2 border-green-500 rounded shadow-sm text-xs py-1 px-2 text-black focus:outline-none"
+                          >
+                            BAYAR SEKARANGGG
+                          </button>
+                        </router-link>
+                      </div>
+                      <div v-else>
+                        <router-link :to="{ name: 'qris.infaq' }">
+                          <button
+                            class="bg-green-500 border-2 border-green-500 rounded shadow-sm text-xs py-1 px-2 text-black focus:outline-none"
+                          >
+                            BAYAR SEKARANG
+                          </button>
+                        </router-link>
+                      </div>
                     </div>
                   </div>
                   <div class="ml-auto text-sm text-gray-500 underline">
