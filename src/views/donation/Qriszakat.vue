@@ -2,7 +2,7 @@
   <div class="pb-20 pt-20">
     <div class="container mx-auto grid grid-cols-1 p-3 sm:w-full md:w-5/12">
       <div class="bg-white rounded-md shadow-md p-3">
-        <img src="@/assets/images/qris-baznastuba.png" />
+        <img src="@/assets/images/qris-zakat-baznastuba.png" />
 
         <div v-if="maxDate(campaign.max_date) == true">
           <div class="mt-5">
